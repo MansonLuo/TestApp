@@ -13,6 +13,6 @@ public class MainActivity extends Activity
     }
 
     public void test() {
-	System.out.println("test");
+	    System.out.println("test");
     }
 }
