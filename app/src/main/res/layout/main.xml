@@ -3,18 +3,36 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:gravity="top|center_horizontal"
+	android:gravity="top"
 	android:orientation="vertical">
 
-	<TextView
-		android:text="@string/hello_world"
+	<LinearLayout
+		android:orientation="horizontal"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"/>
+		android:layout_height="wrap_content">
 
-	<Button
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Button"/>
+		<EditText
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/input"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Button"
+			android:layout_marginLeft="10dp"
+			android:id="@+id/send"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:text="Text"
+		android:gravity="top|center_horizontal"
+		android:paddingTop="10dp"
+		android:id="@+id/show"/>
 
 </LinearLayout>
 
